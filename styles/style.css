@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'galanogrotesquedemo-bold';
-  src: url("../fonts/Galano Grotesque/galanogrotesquedemo-bold-webfont.woff2") format("woff2"), url("../fonts/Galano Grotesque/galanogrotesquedemo-bold-webfont.woff") format("woff");
+  src: url("galanogrotesquedemo-bold-webfont.woff2") format("woff2"), url("galanogrotesquedemo-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -127,30 +127,6 @@ main > div div i {
           box-shadow: 1px 5px 5px 0px #ffb752;
 }
 
-section {
-  height: 80vh;
-  padding-left: 120px;
-  background-color: #f0f2f7;
-  background: filter-gradient(#f0f2f7, #fffefe, vertical);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f0f2f7), color-stop(30%, #f0f2f7), color-stop(30%, #fffefe), to(#fffefe));
-  background: linear-gradient(top, #f0f2f7 0%, #f0f2f7 30%, #fffefe 30%, #fffefe 100%);
-}
-
-section > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
-}
-
 article {
   background-color: white;
   width: 22%;
@@ -183,6 +159,15 @@ article div:nth-child(4) {
   display: none;
 }
 
+article:hover {
+  -webkit-box-shadow: 1px 5px 5px 0px #e4e4e7;
+          box-shadow: 1px 5px 5px 0px #e4e4e7;
+}
+
+article:hover div:nth-child(4) {
+  display: block;
+}
+
 article > div:nth-child(1) {
   height: 140px;
   display: -webkit-box;
@@ -212,18 +197,41 @@ article > div:nth-child(1) hr {
   right: 10%;
 }
 
+section {
+  height: 80vh;
+  padding-left: 120px;
+  background-color: #f0f2f7;
+  background: filter-gradient(#f0f2f7, #fffefe, vertical);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f2f7), color-stop(30%, #f0f2f7), color-stop(30%, #fffefe), to(#fffefe));
+  background: linear-gradient(top, #f0f2f7 0%, #f0f2f7 30%, #fffefe 30%, #fffefe 100%);
+}
+
+section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 body {
   margin: 0;
-  font-family: 'typold-book500';
+  font-family: "galanogrotesquedemo-bold";
 }
 
 h1 {
   font-size: 24px;
+  font: 24px "typold-book500";
 }
 
 h2 {
   font-size: 10px;
   color: #97959a;
   margin: 0 0 15px;
+}
+
+p {
+  font: 16px "typold-book500";
 }
 /*# sourceMappingURL=style.css.map */

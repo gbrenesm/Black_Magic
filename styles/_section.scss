@@ -1,0 +1,12 @@
+section {
+  height: 80vh;
+  padding-left: $leftpadding;
+  background-color: $grayBackground;
+  background: filter-gradient($grayBackground, $whiteBackgorund, vertical);
+  background: linear-gradient(top, $grayBackground 0%, $grayBackground 30%, $whiteBackgorund 30%, $whiteBackgorund 100%)
+}
+
+section>div {
+  display: flex;
+  justify-content: flex-start;
+}

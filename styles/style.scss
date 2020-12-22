@@ -3,18 +3,26 @@
 @import './mixing';
 @import './header';
 @import './cards';
+@import './section';
 
+
+// General styles
 body {
   margin: 0;
-  font-family: 'typold-book500';
+  font-family: $mainFont;
 }
 
 h1 {
   font-size: 24px;
+  font: 24px $secondFont;
 }
 
 h2 {
   font-size: 10px;
   color: $grayFont;
   margin: 0 0 15px;
+}
+
+p {
+  font: 16px $secondFont;
 }
