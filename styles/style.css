@@ -128,8 +128,12 @@ main > div div i {
 }
 
 section {
+  height: 80vh;
   padding-left: 120px;
-  background-color: blue;
+  background-color: #f0f2f7;
+  background: filter-gradient(#f0f2f7, #fffefe, vertical);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f2f7), color-stop(30%, #f0f2f7), color-stop(30%, #fffefe), to(#fffefe));
+  background: linear-gradient(top, #f0f2f7 0%, #f0f2f7 30%, #fffefe 30%, #fffefe 100%);
 }
 
 section > div {
@@ -152,10 +156,7 @@ article {
   width: 22%;
   border-radius: 2px;
   margin-right: 2%;
-}
-
-article div:nth-child(1) {
-  height: 140px;
+  position: relative;
 }
 
 article div:nth-child(3) {
@@ -182,8 +183,33 @@ article div:nth-child(4) {
   display: none;
 }
 
-article img {
+article > div:nth-child(1) {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article > div:nth-child(1) img {
   width: 100px;
+}
+
+article > div:nth-child(1) hr {
+  border: none;
+  border-bottom: 1.5px #f0f2f7 solid;
+  width: 80%;
+  position: absolute;
+  top: 140px;
+  right: 10%;
 }
 
 body {

@@ -1,8 +1,9 @@
 section {
+  height: 80vh;
   padding-left: $leftpadding;
-  background-color: blue;
-  //background: filter-gradient($grayBackground, $whiteBackgorund, vertical);
-  //background: linear-gradient(top, $grayBackground 0%, grayBackground 23%, #fffefe 23%, #fffefe 50%, #fffefe 100%);
+  background-color: $grayBackground;
+  background: filter-gradient($grayBackground, $whiteBackgorund, vertical);
+  background: linear-gradient(top, $grayBackground 0%, $grayBackground 30%, $whiteBackgorund 30%, $whiteBackgorund 100%)
 }
 
 section>div {
@@ -10,33 +11,50 @@ section>div {
   justify-content: flex-start !important;
 }
 
+// Cards
 article {
   background-color: white;
   width: 22%;
   border-radius: 2px;
   margin-right: 2%;
+  position: relative;
 
-  div:nth-child(1){
-    height: 140px;
-  }
-
+//Price part of the card
   div:nth-child(3){
     @include flex;
     background-color: $grayBackgroundPrice;
+
+    img {
+      width: 20px;
+      border: 1px solid #e7eaf4;
+      border-radius: 50%;
+      padding: 9px 9px 9px 8px
+    }
   }
-  // Logo in the card
-  div:nth-child(3) img{
-    width: 20px;
-    border: 1px solid #e7eaf4;
-    border-radius: 50%;
-    padding: 9px 9px 9px 8px
-  }
+
 
   div:nth-child(4) {
     display: none;
   }
 }
 
-article img {
-  width: 100px;
+
+// First part of the card (logo company part)
+article>div:nth-child(1){
+  height: 140px;
+  @include flex;
+  justify-content: center;
+
+  img {
+    width: 100px;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1.5px $grayBackground solid;
+    width: 80%;
+    position: absolute;
+    top: 140px;
+    right: 10%;
+  }
 }
