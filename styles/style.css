@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'galanogrotesquedemo-bold';
+  src: url("../fonts/Galano Grotesque/galanogrotesquedemo-bold-webfont.woff2") format("woff2"), url("../fonts/Galano Grotesque/galanogrotesquedemo-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'typold-book500';
+  src: url("typold-book500-webfont.woff2") format("woff2"), url("typold-book500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'galanogrotesquedemo-bold';
+  padding: 30px 70px;
+}
+
+nav img {
+  height: 30px;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  padding-right: 50px;
+}
+
+nav div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+nav div li {
+  list-style: none;
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'typold-book500';
+}
+/*# sourceMappingURL=style.css.map */

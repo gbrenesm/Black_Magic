@@ -1,0 +1,31 @@
+// Styles for header. 
+
+nav {
+  @include flex();
+  font-family: 'galanogrotesquedemo-bold';
+  padding: 30px 70px;
+
+  img {
+    height: 30px;
+  }
+}
+
+nav div{
+  @include flex();
+  width: 55%;
+  padding-right: 50px;
+
+  ul {
+    @include flex();
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
