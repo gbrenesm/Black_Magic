@@ -1,0 +1,42 @@
+section {
+  padding-left: $leftpadding;
+  background-color: blue;
+  //background: filter-gradient($grayBackground, $whiteBackgorund, vertical);
+  //background: linear-gradient(top, $grayBackground 0%, grayBackground 23%, #fffefe 23%, #fffefe 50%, #fffefe 100%);
+}
+
+section>div {
+  @include flex;
+  justify-content: flex-start !important;
+}
+
+article {
+  background-color: white;
+  width: 22%;
+  border-radius: 2px;
+  margin-right: 2%;
+
+  div:nth-child(1){
+    height: 140px;
+  }
+
+  div:nth-child(3){
+    @include flex;
+    background-color: $grayBackgroundPrice;
+  }
+  // Logo in the card
+  div:nth-child(3) img{
+    width: 20px;
+    border: 1px solid #e7eaf4;
+    border-radius: 50%;
+    padding: 9px 9px 9px 8px
+  }
+
+  div:nth-child(4) {
+    display: none;
+  }
+}
+
+article img {
+  width: 100px;
+}
