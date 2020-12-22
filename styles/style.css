@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+header {
+  background-color: #f0f2f7;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,8 +70,74 @@ nav div a {
   color: white;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+main img {
+  height: 410px;
+  padding: 23px 45px;
+}
+
+main > div {
+  width: 40%;
+  padding-left: 120px;
+}
+
+main > div div {
+  position: relative;
+}
+
+main > div div input {
+  width: 105%;
+  padding: 25px;
+  border: none;
+  border-radius: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+main > div div button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+main > div div i {
+  background-color: #ff8d58;
+  background: filter-gradient(#ff8d58, #ffb752, horizontal);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff8d58), color-stop(0%, #ff9a56), color-stop(29%, #ff9756), color-stop(55%, #ffa454), color-stop(75%, #ffaf53), color-stop(96%, #ffb752), to(#ffb752));
+  background: linear-gradient(left top, #ff8d58 0%, #ff9a56 0%, #ff9756 29%, #ffa454 55%, #ffaf53 75%, #ffb752 96%, #ffb752 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 5px 5px 0px #ffb752;
+          box-shadow: 1px 5px 5px 0px #ffb752;
+}
+
 body {
   margin: 0;
   font-family: 'typold-book500';
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 10px;
+  color: #97959a;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,10 @@
-// Styles for header. 
+// Styles for the header part.
 
+header {
+  background-color: $grayBackground;
+}
+
+// Nav bar
 nav {
   @include flex();
   font-family: 'galanogrotesquedemo-bold';
@@ -28,4 +33,53 @@ nav div{
     text-decoration: none;
     color: white;
   }
+}
+
+// Main part
+main {
+  @include flex();
+  padding-top: 5px;
+
+  img {
+    height: 410px;
+    padding: 23px 45px;
+  }
+}
+
+main>div {
+  width: 40%;
+  padding-left: 120px;
+}
+
+main>div div{
+  position: relative;
+
+  input {
+    width: 105%;
+    padding: 25px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 30px
+  }
+
+  i {
+    background-color: $orange;
+    background: filter-gradient(#ff8d58, #ffb752, horizontal);
+    background: linear-gradient(left top, rgba(255,141,88,1) 0%, rgba(255,154,86,1) 0%, rgba(255,151,86,1) 29%, rgba(255,164,84,1) 55%, rgba(255,175,83,1) 75%, rgba(255,183,82,1) 96%, rgba(255,183,82,1) 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 5px 0px $orangelight
+  }
+
 }
