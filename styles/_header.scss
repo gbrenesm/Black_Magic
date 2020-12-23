@@ -1,32 +1,41 @@
-// Styles for the header part.
-
+// Styles for the header part
 header {
   background-color: $grayBackground;
+  //background-image: src("../images/Main.png");
 }
 
 // Nav bar
 nav {
   @include flex();
   font-family: 'galanogrotesquedemo-bold';
-  padding: 30px 70px;
+  padding: 20px 70px;
 
   img {
-    height: 30px;
+    height: 25px;
   }
 }
 
 nav div{
   @include flex();
   width: 55%;
-  padding-right: 50px;
+  padding-left: 50px;
 
   ul {
     @include flex();
+    justify-content: space-between !important;
     padding: 0;
   }
 
   li {
     list-style: none;
+    margin-right: 25px;
+    font-size: 12px;
+  }
+
+  ul:last-child li:last-child {
+    background-color: #5e44d5;
+    border-radius: 20px;
+    padding: 15px 20px;
   }
 
   a {
@@ -43,7 +52,7 @@ main {
 
   img {
     height: 410px;
-    padding: 23px 45px;
+    padding: 0px 45px 40px;
   }
 }
 
@@ -62,6 +71,7 @@ main>div div{
     border-radius: 40px;
     margin-top: 20px;
     position: relative;
+    box-shadow: 1px 10px 26px 4px rgba(0,0,0,0.10)
   }
 
   button {
@@ -69,7 +79,7 @@ main>div div{
     border: none;
     border-radius: 50%;
     position: absolute;
-    right: 0px;
+    right: -17px;
     top: 30px
   }
 
@@ -82,5 +92,4 @@ main>div div{
     border-radius: 50%;
     box-shadow: 1px 5px 5px 0px $orangelight
   }
-
 }

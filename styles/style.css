@@ -27,11 +27,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'galanogrotesquedemo-bold';
-  padding: 30px 70px;
+  padding: 20px 70px;
 }
 
 nav img {
-  height: 30px;
+  height: 25px;
 }
 
 nav div {
@@ -45,7 +45,7 @@ nav div {
       -ms-flex-align: center;
           align-items: center;
   width: 55%;
-  padding-right: 50px;
+  padding-left: 50px;
 }
 
 nav div ul {
@@ -58,11 +58,20 @@ nav div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: space-between !important;
   padding: 0;
 }
 
 nav div li {
   list-style: none;
+  margin-right: 25px;
+  font-size: 12px;
+}
+
+nav div ul:last-child li:last-child {
+  background-color: #5e44d5;
+  border-radius: 20px;
+  padding: 15px 20px;
 }
 
 nav div a {
@@ -85,12 +94,12 @@ main {
 
 main img {
   height: 410px;
-  padding: 23px 45px;
+  padding: 0px 45px 40px;
 }
 
 main > div {
   width: 40%;
-  padding-left: 120px;
+  padding-left: 143px;
 }
 
 main > div div {
@@ -104,6 +113,8 @@ main > div div input {
   border-radius: 40px;
   margin-top: 20px;
   position: relative;
+  -webkit-box-shadow: 1px 10px 26px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 10px 26px 4px rgba(0, 0, 0, 0.1);
 }
 
 main > div div button {
@@ -111,7 +122,7 @@ main > div div button {
   border: none;
   border-radius: 50%;
   position: absolute;
-  right: 0px;
+  right: -17px;
   top: 30px;
 }
 
@@ -129,7 +140,7 @@ main > div div i {
 
 section {
   height: 70vh;
-  padding-left: 120px;
+  padding-left: 143px;
   background-color: #f0f2f7;
   background: filter-gradient(#f0f2f7, #fffefe, vertical);
   background: -webkit-gradient(linear, left top, left bottom, from(#f0f2f7), color-stop(34%, #f0f2f7), color-stop(34%, #fffefe), to(#fffefe));
@@ -227,6 +238,11 @@ article div:nth-child(3) p:nth-child(1) {
   font-weight: bold;
   color: #5c22d1;
   margin: 0;
+  background: ffilter-gradient(#5b28d1, #4a61d6, horizontal);
+  background: -webkit-gradient(linear, left top, right top, from(#5b28d1), color-stop(35%, #5344d4), color-stop(66%, #4e54d5), color-stop(92%, #4a61d6), to(#4a61d6));
+  background: linear-gradient(left, #5b28d1 0%, #5344d4 35%, #4e54d5 66%, #4a61d6 92%, #4a61d6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 article div:nth-child(3) p:nth-child(2) {
@@ -238,8 +254,8 @@ article div:nth-child(4) {
 }
 
 article:hover {
-  -webkit-box-shadow: 1px 5px 5px 0px #e4e4e7;
-          box-shadow: 1px 5px 5px 0px #e4e4e7;
+  -webkit-box-shadow: 1px 10px 26px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 10px 26px 4px rgba(0, 0, 0, 0.1);
 }
 
 article:hover div:nth-child(4) {
@@ -263,8 +279,8 @@ body {
 }
 
 h1 {
-  font-size: 24px;
-  font: 24px "typold-book500";
+  font: 30px "typold-book500";
+  width: 480px;
 }
 
 h2 {

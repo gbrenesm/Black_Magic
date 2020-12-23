@@ -66,8 +66,10 @@ article {
       font-weight: bold;
       color: $purple;
       margin: 0;
-      //color: filter-gradient(#5c22d1, #4a61d6, horizontal);
-      //color: linear-gradient(left, rgba(92,34,209,1) 0%, rgba(82,65,211,1) 24%, rgba(82,65,211,1) 48%, rgba(74,97,214,1) 73%, rgba(74,97,214,1) 100%)
+      background: ffilter-gradient(#5b28d1, #4a61d6, horizontal);
+      background: linear-gradient(left, #5b28d1 0%, #5344d4 35%, #4e54d5 66%, #4a61d6 92%, #4a61d6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     p:nth-child(2) {
@@ -84,7 +86,7 @@ article {
 
 // Card hover
 article:hover{
-  box-shadow: 1px 5px 5px 0px $grayShadow;
+  box-shadow: 1px 10px 26px 4px rgba(0,0,0,0.10);
 
   div:nth-child(4){
     display: block;
