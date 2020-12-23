@@ -13,7 +13,12 @@
 }
 
 header {
+  height: 90vh;
   background-color: #f0f2f7;
+  background-image: url("/images/Background.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
 }
 
 nav {
@@ -89,7 +94,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
+  padding-top: 28vh;
 }
 
 main img {
@@ -241,7 +246,7 @@ article div:nth-child(3) p:nth-child(1) {
   background: ffilter-gradient(#5b28d1, #4a61d6, horizontal);
   background: -webkit-gradient(linear, left top, right top, from(#5b28d1), color-stop(35%, #5344d4), color-stop(66%, #4e54d5), color-stop(92%, #4a61d6), to(#4a61d6));
   background: linear-gradient(left, #5b28d1 0%, #5344d4 35%, #4e54d5 66%, #4a61d6 92%, #4a61d6 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

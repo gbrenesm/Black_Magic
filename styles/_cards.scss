@@ -68,7 +68,7 @@ article {
       margin: 0;
       background: ffilter-gradient(#5b28d1, #4a61d6, horizontal);
       background: linear-gradient(left, #5b28d1 0%, #5344d4 35%, #4e54d5 66%, #4a61d6 92%, #4a61d6 100%);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 

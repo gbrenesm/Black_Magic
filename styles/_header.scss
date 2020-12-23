@@ -1,7 +1,11 @@
 // Styles for the header part
 header {
+  height: 90vh;
   background-color: $grayBackground;
-  //background-image: src("../images/Main.png");
+  background-image: url('/images/Background.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain
 }
 
 // Nav bar
@@ -48,7 +52,7 @@ nav div{
 // Main part
 main {
   @include flex();
-  padding-top: 5px;
+  padding-top: 28vh;
 
   img {
     height: 410px;
