@@ -2,7 +2,7 @@
 header {
   height: 90vh;
   background-color: $grayBackground;
-  background-image: url('https://gbrenesm.github.io/Black_Magic/images/Background.png');
+  background-image: url('images/Background.png');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain
@@ -37,7 +37,7 @@ nav div{
   }
 
   ul:last-child li:last-child {
-    background-color: #5e44d5;
+    background-color: $purpleSignUp;
     border-radius: 20px;
     padding: 15px 20px;
   }
